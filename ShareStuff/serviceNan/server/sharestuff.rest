@@ -1,0 +1,51 @@
+### 🔍 ดูรายการของทั้งหมด
+GET http://localhost:8080/api/items
+
+
+### ➕ เพิ่มของใหม่
+POST http://localhost:8080/api/items
+Content-Type: application/json
+
+{
+  "name": "Tent",
+  "category": "Camping",
+  "quantity": 3
+}
+
+
+### ➕ เพิ่มของอีกชิ้น
+POST http://localhost:8080/api/items
+Content-Type: application/json
+
+{
+  "name": "Lantern",
+  "category": "Camping",
+  "quantity": 5
+}
+
+
+### 🎯 ดูของตาม ID (ลองเปลี่ยนเลขดู)
+GET http://localhost:8080/api/items/1
+
+
+### 🔄 ยืมของ (ลดจำนวนลง 1)
+POST http://localhost:8080/api/borrow?itemId=1&user=anonymous
+
+
+### ♻️ คืนของ (ถ้ามี endpoint สำหรับคืน)
+POST http://localhost:8080/api/return?itemId=1
+
+
+### ✏️ แก้ไขข้อมูลของ
+PUT http://localhost:8080/api/items/1
+Content-Type: application/json
+
+{
+  "name": "Tent",
+  "category": "Camping",
+  "quantity": 10
+}
+
+
+### ❌ ลบของออกจากระบบ
+DELETE http://localhost:8080/api/items/1

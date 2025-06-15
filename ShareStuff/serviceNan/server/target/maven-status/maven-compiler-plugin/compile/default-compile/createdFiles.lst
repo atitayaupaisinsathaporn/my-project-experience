@@ -1,0 +1,6 @@
+com/example/demo/controller/ShareStuffController.class
+com/example/demo/repository/UserRepository.class
+com/example/demo/model/User.class
+com/example/demo/ShareStuffApplication.class
+com/example/demo/model/Item.class
+com/example/demo/repository/ItemRepository.class
